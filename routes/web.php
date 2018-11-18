@@ -20,6 +20,9 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
-Route::post('/', function () {
-    return view('welcome');
+Route::post('/contact', function () {
+    $data = request()->all();
+    echo "Email: ". $data['email'], "<br>";
+    echo "Body: " .$data['body'];
+
 });

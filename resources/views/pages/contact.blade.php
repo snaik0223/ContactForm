@@ -2,9 +2,11 @@
 
 @section('content')
 
+    <div class="card mt-3 pl-2 pr-2">
+        <div class="card-title"></div><h1>Contact</h1><p class="lead"> Please use this form to contact the site owner </p>
 
-    <h1>Contact</h1>
-    <p class="lead"> Please use this form to contact the site owner </p>
+        <div class="card-body">
+
 
     <form action="/contact" method="post">
         {{csrf_field()}}
@@ -19,5 +21,7 @@
         </div>
         <button type="submit" class="btn btn-primary mb-2">Submit</button>
     </form>
+        </div>
+    </div>
 
 @endsection
